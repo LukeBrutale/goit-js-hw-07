@@ -1,5 +1,5 @@
-const categoriesEl = document.querySelector('ul');
-console.log(categoriesEl);
+const selectedById = document.querySelector("#categories");
+console.log(selectedById);
 
-// const itemEl = categoriesEl.querySelector('li');
-// console.log(itemEl);
+// const itemEl = selectedById.querySelectorAll('.item');
+// console.log('Элементы', itemEl);
