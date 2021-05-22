@@ -1,5 +1,13 @@
 const selectedById = document.querySelector("#categories");
-console.log(selectedById);
 
-// const itemEl = selectedById.querySelectorAll('.item');
-// console.log('Элементы', itemEl);
+// const itemEl = selectedById.querySelectorAll(".item");
+// console.log(itemEl);
+
+// const firstItemEl = itemEl.firstChild;
+// console.log(firstItemEl);
+
+// const selectedById = document.querySelector("#categories .item");
+console.log(selectedById.children);
+
+// const firstItemEl = selectedById.firstElementChild;
+// console.log(firstItemEl);
