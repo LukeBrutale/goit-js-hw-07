@@ -1,13 +1,8 @@
-const selectedById = document.querySelector("#categories");
+const selectorId = document.querySelector("#categories");
+// const itemEl = selectorId.querySelectorAll(".item");
+const titleEl = selectorId.querySelectorAll("h2");
 
-// const itemEl = selectedById.querySelectorAll(".item");
+// console.log(selectorId);
 // console.log(itemEl);
-
-// const firstItemEl = itemEl.firstChild;
-// console.log(firstItemEl);
-
-// const selectedById = document.querySelector("#categories .item");
-console.log(selectedById.children);
-
-// const firstItemEl = selectedById.firstElementChild;
-// console.log(firstItemEl);
+console.log(titleEl);
+//
