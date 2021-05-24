@@ -13,19 +13,16 @@ const images = [
   },
 ];
 
-const element = images.map((image, alt) => {
-  const linkEl = document.createElement("img");
-  linkEl.src =
-    "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
-  linkEl.alt = alt;
+const imagesEl = document.querySelector("#gallery");
 
-  // return linkEl;
-
-  console.log(linkEl);
+const makeImages = images.map(image => {
+  return `
+    <li class = 'gallery__item'>
+        <img
+             src = ${image.url},
+            alt = ${image.alt},
+         >
+    </li>
+    `;
 });
-
-// const galleryMarkup = image => {
-//   return;
-// };
-
-// console.log(images);
+imagesEl.insertAdjacentHTML("afterbegin", makeImages.join(""));
