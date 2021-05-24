@@ -1,8 +1,19 @@
 const selectorId = document.querySelector("#categories");
-// const itemEl = selectorId.querySelectorAll(".item");
-const titleEl = selectorId.querySelectorAll("h2");
+const titleEl = selectorId.children;
 
-// console.log(selectorId);
-// console.log(itemEl);
-console.log(titleEl);
-//
+const amountCategories = object => {
+  console.log(`В списке ${object.children.length} категории`);
+};
+
+const descriptionCategories = object => {
+  for (const iterator of object) {
+    console.log(`Категория: ${iterator.firstElementChild.textContent}`);
+
+    console.log(
+      `Количество элементов: ${iterator.lastElementChild.children.length}`
+    );
+  }
+};
+
+amountCategories(selectorId);
+descriptionCategories(titleEl);
