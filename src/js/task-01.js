@@ -16,4 +16,5 @@ const descriptionCategories = object => {
 };
 
 amountCategories(selectorId);
+
 descriptionCategories(titleEl);
