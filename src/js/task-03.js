@@ -25,4 +25,5 @@ const makeImages = images.map(image => {
     </li>
     `;
 });
+
 imagesEl.insertAdjacentHTML("afterbegin", makeImages.join(""));
