@@ -11,5 +11,3 @@ function onInputChange(event) {
   }
   refs.output.textContent = refs.input.value;
 }
-
-// console.log(refs.input;
