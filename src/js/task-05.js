@@ -7,8 +7,7 @@ refs.input.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
   if (refs.input.value === "" || refs.input.value.trim(" ") === "") {
-    // return;
-    message: "незнакомец";
+    return (refs.output.textContent = "незнакомец");
   }
   refs.output.textContent = refs.input.value;
 }
